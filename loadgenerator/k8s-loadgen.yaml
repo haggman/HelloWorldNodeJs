@@ -23,7 +23,7 @@ spec:
         image: gcr.io/...
         env:
         - name: FRONTEND_ADDR
-          value: "http://hello-world:80"
+          value: "http://hello-world-demo:80"
         - name: APP_ROUTE
           value: "/"
         # Current configuration will generate 1 RPS per user, per pod
