@@ -1,8 +1,8 @@
-FROM node:10
+FROM node:12
 
 WORKDIR /usr/src/app
 
-COPY package*.json ./
+COPY package.json ./
 
 RUN npm install --only=production
 

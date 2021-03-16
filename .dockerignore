@@ -1,5 +1,9 @@
 Dockerfile
-README.md
+readme.md
 node_modules
-npm-debug.log
+*.log
 cloudbuld.yaml
+*.sh
+app.yaml
+package-lock.json
+.gitignore
