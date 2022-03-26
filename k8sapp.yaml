@@ -26,10 +26,10 @@ spec:
         resources:
             requests:
               cpu: 100m
-              memory: 128Mi
+              memory: 64Mi
             limits:
               cpu: 200m
-              memory: 256Mi
+              memory: 128Mi
 ---
 
 # The hello-logging service provides a load-balancing proxy over the hello-logging
