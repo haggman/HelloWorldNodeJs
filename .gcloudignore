@@ -5,6 +5,8 @@
 #
 # For more information, run:
 #   $ gcloud topic gcloudignore
+# To list the files being uploaded run:
+#   $ gcloud meta list-files-for-upload
 #
 .gcloudignore
 # If you would like to upload your .git directory, .gitignore file or files
@@ -16,6 +18,8 @@
 *.sh
 *.md
 package-lock.json
+Dockerfile
+k8sapp.yaml
 
 # Node.js dependencies:
 node_modules/
