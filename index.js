@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 8080;
-const target = process.env.TARGET || 'World';
+const target = process.env.TARGET || 'World!';
 
 app.get('/', (req, res) => {
   console.log('Hello world received a request.');
