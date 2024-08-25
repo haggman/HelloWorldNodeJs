@@ -28,7 +28,7 @@ spec:
           value: "/"
         # Current configuration will generate 1 RPS per user, per pod
         - name: USERS
-          value: "30"
+          value: "50"
         resources:
           requests:
             cpu: 300m
