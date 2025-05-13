@@ -16,5 +16,16 @@ else
     echo "Repository '$FULL_REPO' already exists."
 fi
 
+IMAGE_NAME="${FULL_REPO}/hello-world-demo:latest"
 
-gcloud builds submit --tag $FULL_REPO/hello-world-demo:latest .
+# To use Cloud Build and the Dockerfile:
+gcloud builds submit --tag $IMAGE_NAME .
+
+# To use the Google Cloud buildpack:
+# gcloud auth configure-docker ${LOCATION}-docker.pkg.dev
+
+# pack build "${IMAGE_NAME}" \
+#   --builder gcr.io/buildpacks/builder \
+#   --env GOOGLE_NODEJS_VERSION=24.x.x
+
+# docker push "${IMAGE_NAME}"
